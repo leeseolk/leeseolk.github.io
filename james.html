@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+           @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+           #a1{ text-decoration: none; color: rgba(59, 67, 80, 0.382); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+    #a2{text-decoration: none; color: rgb(146, 146, 146);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+
+    }
+    #a3{  text-decoration: none;color: rgba(255, 208, 0, 0.8);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a2:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+  color:rgba(255, 208, 0, 0.8);
+}
+            body{
+     -ms-overflow-style: none;
+     }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /*특정 부분 스크롤바 없애기*/
+  
+        body{
+            background-color: #000000;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      html,
+      body {
+  color: #fff;
+        height: 100%;
+        padding: 0, auto;
+        margin: 0, auto;
+        align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+        
+      }
+
+      header {
+        width:1400px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 40px;
+        background-color: #000000;
+      }
+      .clear{
+            clear: both;
+        }
+      #contents{
+      width: 100%;
+        min-height: calc(100% - 120px);
+            margin: 0 auto;
+            margin-left: 20px;
+           
+        }
+
+     #main_img{
+            width: 100%;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            margin-top: -20px;
+        }
+   h4{
+      font-size:50px;
+      float: left;
+     }
+     #main_contents{
+            width: 1500px;
+            float: center;
+            margin-top: -255px;
+        }
+img{
+  border-radius: 8%;
+}
+      footer {
+        height: 100px;
+        background-color: #000000;
+      }
+      li{
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #7e7e7e;
+        font-size: 7px;
+    }
+    #address{
+            float: right;
+            margin: 50px 90px 0 0;
+            color: white;
+            /*border: solid 1px red;*/
+        }
+        *
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+
+.center
+{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-card
+{
+  height:280px;
+  width:600px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+
+}
+.property-image
+{
+  height:280px;
+  width:600px;
+
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-1280.jpg?itok=9hyNVMwe);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image1
+{
+  height:280px;
+  width:600px;
+
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_galaxies_stephans_quintet_sq_nircam_miri_final-1280.jpg?itok=HyMw6H_h);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image2
+{
+  height:280px;
+  width:600px;
+
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/main_image_deep_field_smacs0723-1280.jpg?itok=6-LM40Qf);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.property-image3
+{
+  height:280px;
+  width:600px;
+
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url(https://live-production.wcms.abc-cdn.net.au/bbb9b76311f3931fc7b29a9ce2ca0e53?impolicy=wcms_crop_resize&cropH=518&cropW=921&xPos=0&yPos=0&width=862&height=485);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+.property-description
+{
+  background-color: rgba(116, 152, 205, 0.1);
+  height:280px;
+  width:600px;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+table{
+  margin: auto;
+  text-align: center;
+ 
+
+}
+td{
+  padding:20px;
+
+}
+h1{
+  font-size: 80px;
+  font-family: 'Homemade Apple', cursive;
+  
+}
+h3{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+h6{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 200;
+  color: #8c95ad;
+}
+
+
+
+.worko-tabs {
+  margin: 20px;
+
+}
+.worko-tabs .state {
+  position: absolute;
+
+}
+.worko-tabs .flex-tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  flex-grow: 1;
+  max-height: 40px;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  min-height: 300px;
+  display: none;
+  width: 100%;
+ text-align: center;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color:  #000000;
+}
+.worko-tabs .tab:hover {
+  background-color:#9aaddc;
+}
+
+
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+  background-color: #9aaddc;
+
+}
+
+
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .flex-tabs {
+    flex-direction: column;
+  }
+ 
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-two-label {
+    order: 3;
+  }
+  .flex-tabs #tab-three-label {
+    order: 5;
+  }
+  .flex-tabs #tab-four-label {
+    order: 7;
+  }
+  .flex-tabs #tab-one-panel {
+    order: 2;
+  }
+  .flex-tabs #tab-two-panel {
+    order: 4;
+  }
+  .flex-tabs #tab-three-panel {
+    order: 6;
+  }
+  .flex-tabs #tab-four-panel {
+    order: 8;
+  }
+
+
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+    border-bottom: none;
+  }
+
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+    border-bottom: none;
+  }
+}
+.static {
+  position: absolute;
+  background: rgb(0, 0, 0);
+}
+
+.static:hover {
+  opacity: 0;
+}
+
+        </style>
+</head>
+<body>
+  <header> 
+      <div id="logo"></div><link rel="stylesheet" href="a1.css" ><h1 class="shimmer"> </div>
+      <a id= a1 href='index.html'>Pale Blue Dot.</h1></a>
+      <span style="float:right;">
+      <a id= a2 href='calsagan.html'>Carl Sagan</a>&emsp;
+      <a id= a2 href='planet.html'>Planet</a>&emsp;
+      <a id= a2 href='tra.html'>Trappist</a>&emsp;
+      <a id= a3 href='james.html'>James Webb</a>&emsp;
+      <a id= a2 href='as.html'>Astronomy</a>&emsp;</span>
+      </header>
+      <section id="main1_img">
+        <img src="img/main.png" >
+        <center> <img src="img/james.gif" ></center>
+       
+
+      <section id="contents">
+        
+      <div id="main_contents">
+        <div id="wrap">
+         
+        <div class="container">
+
+          <table>
+            <tr>
+              <td>
+          <div class="center">
+            <div class="property-card">  
+                <div class="property-image" >
+                  <div class="property-image-title">       
+                  </div>
+                </div>
+              <div class="property-description">
+                <h5> Carina Nebula </h5>   
+              </div>   
+                  
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="center">
+            <div class="property-card">  
+                <div class="property-image1" >
+                  <div class="property-image-title">       
+                  </div>
+                </div>
+              <div class="property-description">
+                <h5> Stephan's Quintet</h5>   
+              </div>   
+                  
+            </div>
+          </div>
+        </td>
+        </tr>
+       
+        <td><img class="static" src="img/jmes.png" width="560" height="500">
+        <img class="active" src="img/james1.gif"width="560" height="500">  </td>
+        <td><h1>James Webb</h1>
+        <br>
+      <h3>제임스 웹 우주 망원경</h3><br>
+    <h6>2021년 12월 25일 12:20 UTC</h6></td>
+
+        <tr>
+          <td>
+      <div class="center">
+        <div class="property-card">  
+            <div class="property-image2" >
+              <div class="property-image-title">       
+              </div>
+            </div>
+          <div class="property-description">
+            <h5> SMACS 0723</h5> 
+          </div>   
+              
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="center">
+        <div class="property-card">  
+            <div class="property-image3" >
+              <div class="property-image-title">       
+              </div>
+            </div>
+          <div class="property-description">
+            <h5>Carina Nebula</h5>   
+          </div> 
+    </tr>
+   
+     </table></div>   <br>  
+     <div id="main_contents">
+      <div id="wrap">
+     <div class="worko-tabs">
+
+   
+      <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+      <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+      <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+    
+      <div class="tabs flex-tabs">
+     
+        <label for="tab-two" id="tab-two-label" class="tab">Hubble Space Telescope_1990.4.24</label>
+        <label for="tab-three" id="tab-three-label" class="tab">Spitzer Space Telescope_2003.8.25</label>
+        <label for="tab-four" id="tab-four-label" class="tab">James Webb Telescope_2021.12.25</label>
+    
+        <div id="tab-two-panel" class="panel">
+        <table>
+          <tr>
+            <td><img src="img/hub.png" width="351" height="253"></td>
+            <td><img src="img/hub1.jpg" width="293" height="253"></td>
+            <td><img src="img/hub2.jpg" width="263" height="253"></td>
+            <td><img src="img/hub3.jpg" width="263" height="253"></td>
+          </tr>
+        </table>
+         
+       </div>
+        <div id="tab-three-panel" class="panel">
+          <table>
+            <tr>
+              <td><img src="img/sp.png" width="301" height="253"></td>
+              <td><img src="img/sp1.jpg" width="293" height="253"></td>
+              <td><img src="img/sp2.jpg" width="283" height="253"></td>
+              <td><img src="img/sp3.png" width="263" height="253"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="tab-four-panel" class="panel">
+          <table>
+            <tr>
+              <td><img src="img/ja5.jpg"  width="430" height="256"></td>
+              <td><img src="img/ja6.jpg"  width="430" height="256"></td>
+              <td><img src="img/ja3.png"  width="430" height="256"></td>
+            </tr>
+            <tr>
+              <td><img src="img/ja1.jpg"  width="430" height="256"></td>
+              <td><img src="img/ja8.jpg"  width="430" height="256"></td>
+              <td><img src="img/ja4.png"  width="430" height="256"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    
+    </div></div></div>
+
+
+  
+      <footer>
+        <link rel="stylesheet" href="b.css" >
+        <article id="wrap">
+          <article id="lightings">
+              <section id="one">
+                    <section id="two">
+                        <section id="three">
+                            <section id="four">
+                                <section id="five">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+            </section>
+            </article>
+            <div id="address">Pale Blue Dot.</div>
+              <ul><p><br><br>
+                <li>Pale blue dot.</li>
+                <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+                <li>based in The Earth copyright © 2022</li>
+              </ul>
+            </footer>
+        </article>
+</body>
+</html>

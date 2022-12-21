@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+         @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+#a1{ text-decoration: none; color: rgba(59, 67, 80, 0.382); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+    #a2{text-decoration: none; color: rgb(146, 146, 146);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a3{  text-decoration: none;color: rgba(255, 208, 0, 0.8);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a2:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+  color:rgba(255, 208, 0, 0.8);
+}
+            body{
+     -ms-overflow-style: none;
+     }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /*특정 부분 스크롤바 없애기*/
+  
+        body{
+            background-color: #000000;
+        }
+:root{   --jupiter-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/jupiter.jpg);
+  --jupiter-tilt: rotate(3.1deg);
+  --jupiter-day: 9.9;
+  --jupiter-color: #c9b5a4;
+ }
+      @keyframes planetRotate {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+*{
+            padding: 0;
+            margin: 0;
+        }
+      html,
+      body {
+  color: #fff;
+        height: 100%;
+        padding: 0, auto;
+        margin: 0, auto;
+        align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+        
+      }
+
+      header {
+        width:1400px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 40px;
+        background-color: #000000;
+      }
+      .clear{
+            clear: both;
+        }
+      #contents{
+      width: 90%;
+        min-height: calc(100% - 120px);
+            margin: 0 auto;
+        }
+        #sub_menu{
+            width: 100px;
+            float: left;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+     aside{
+      width: 35%;
+      float:right;
+      margin-top:60px;
+      margin-right:20px;
+      background-color: rgba(14, 14, 38, 0.347);
+  
+     }
+   h4{
+      font-size:50px;
+      float: left;
+      color:  #f0ceaa;
+     }
+       .slide:hover,.slide1:hover,.slide2:hover, .slide3:hover, .slide4:hover, .slide5:hover,.slide6:hover,.slide7:hover,.slide8:hover
+      .slide:hover,.slide1:focus,.slide2:focus,.slide3:focus,.slide4:focus,.slide5:focus,.slide6:focus,.slide7:focus,.slide8:focus
+      {box-shadow: inset 6.5em 0 0 0 var(--hover);}
+.slide1 {
+  --color: #ffffff;
+  --hover: #103dba;
+}
+.slide2 {
+    --color: #ffffff;
+  --hover: #898989;
+}
+.slide3 {
+  --color: #ffffff;
+  --hover: #e79d2e;
+}
+.slide4 {
+    --color: #ffffff;
+  --hover: #c63c23;
+}
+.slide5 {
+  --color: #f0be89;
+ 
+}
+.slide6{
+  --color: #ffffff;
+  --hover: #c2a780;
+}
+.slide7{
+  --color: #ffffff;
+  --hover: #81dce6;
+}
+.slide {
+  --color: #ffffff;
+  --hover: #5371c4;
+}
+button {
+  background: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  padding: 1em 2em;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+        #main_contents{
+            width: 1300px;
+            float: center;
+            margin-top: 15px;
+        }
+
+      footer {
+        height: 100px;
+        background-color: #000000;
+      }
+      li{
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #7e7e7e;
+        font-size: 7px;
+    }
+    #address{
+            float: right;
+            margin: 50px 90px 0 0;
+            color: white;
+            /*border: solid 1px red;*/
+        }
+      .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card--jupiter .planet__atmosphere {
+  box-shadow: inset 10px 0px 12px -2px rgba(255, 255, 255, 0.2), inset -70px 0px 50px 0px black, -5px 0px 10px -4px var(--jupiter-color);
+}
+.card--jupiter .planet__surface {
+  background-image: var(--jupiter-image);
+  transform: var(--jupiter-tilt) scale(1.2);
+  animation: planetRotate calc(var(--jupiter-day)*.1s) linear infinite;
+}
+.card--jupiter .card__planet::before {
+  transform: var(--jupiter-tilt) scale(1.2);
+  border-color: var(--jupiter-color);
+  color: var(--jupiter-color);
+}
+.card--jupiter .tilt__icon {
+  transform: var(--jupiter-tilt);
+  color: var(--jupiter-color);
+}
+.card__planet::before {
+  content: "";
+  position: relative;
+  height: 190px;
+  z-index: -2;
+  left: 50%;
+  top: 0%;
+ 
+}
+
+.planet__atmosphere {
+  height: 390px;
+  width: 390px;
+  position: relative;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 65%);
+  border-radius: 200px;
+  overflow: hidden;
+  margin-top: 100px;
+
+
+}
+.planet__surface {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+
+.card__info {
+  width: 50%;
+  color:#ffffff;
+  font-family: "Noto-sans", sans-serif;
+  font-weight: 100px;
+}
+
+.info__item {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  font-size: 14px;
+ 
+}
+.info__item .tilt__icon {
+  margin: 0 auto;
+}
+.info__label {
+  font-size: 11px;
+}
+.info__line {
+    width:1400px;
+  flex: 1;
+  margin: 0 auto;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header> 
+      <div id="logo"></div><link rel="stylesheet" href="a1.css" ><h1 class="shimmer"> </div>
+      <a id= a1 href='index.html'>Pale Blue Dot.</h1></a>
+      <span style="float:right;">
+      <a id= a2 href='calsagan.html'>Carl Sagan</a>&emsp;
+      <a id= a3 href='planet.html'>Planet</a>&emsp;
+      <a id= a2 href='tra.html'>Trappist</a>&emsp;
+      <a id= a2 href='james.html'>James Webb</a>&emsp;
+      <a id= a2 href='as.html'>Astronomy</a>&emsp;</span>
+      </header>
+      
+    <div id="wrap">
+      <div id="content-wrap">
+        <section id="contents">
+          <nav id="sub_menu"> 
+            <a href="planet.html"><button class="slide1">Earth</button></a>
+            <a href="mercury.html"><button class="slide2">Mercury</button></a>
+              <a href="venus.html"><button class="slide3">Venus</button></a>
+              <a href="mars.html"><button class="slide4">Mars</button></a>
+              <a href="jupiter.html"><button class="slide5">Jupiter</button></a>
+              <a href="saturn.html"><button class="slide6">Saturn</button></a>
+              <a href="uranus.html"><button class="slide7">Uranus</button></a>
+              <a href="neptune.html"><button class="slide">Neptune</button></a>
+        </nav>
+        <aside><h4>Jupiter : <br> ___
+          <span><p>Jupiter is believed to have more than 60 moons.</p>
+            <br><p>태양에서 다섯번째로 가까운 행성.태양계의 행성 중 가장 부피가 크고 무거운 천체이다.<br>
+              목성의 질량은 다른 태양계 행성들을 합친 것보다도 무거운데,<br> 태양계 내 나머지 7개 행성의 질량을 전부 다 합쳐도 목성의 절반도 되지 않을 정도이다.
+              <br>지름이 약 14만 3000km로 지구의 약 11배, 부피는 지구의 약 1,300배나 된다.
+            <br>대기는 주로 수소, 헬륨 그리고 약간의 암모니아와 메탄으로 이루어져 있다.
+            <br>대적반(Great Red Spot)의 주위는 대기는 반시계 방향으로 순환하며 풍속은 100m/s에 가까울 정도로 움직임이 활발하다.
+            <br><br>목성의 운동_자전<br>
+            목성은 태양계 내에서 가장 빠른 자전을 하며 그로 인해 적도지방이 불룩한 타원체로 볼 수 있다. 
+            <br>목성은 대부분 기체로 이루어져 있으며, 이에 따라 태양처럼 차등자전을 한다.<br>
+            즉 적도에서 가장 빠르고 극지방에서 상대적으로 느린 자전을 한다. 
+            적도 부근에서는 9시간 50분 주기로 자전을 하며, <br>고위도에서는 9시간 55분 주기로 자전을 한다. 그리고 자전축은 3°가량 기울어져 있다. <br>
+            
+            <br>목성의 운동_공전<br>
+            목성은 태양으로부터 약 5.2AU(7억 8천만km) 떨어져서 공전을 하고 있다.  <br>
+            이심률은 0.048 정도로 작은 편이고 공전주기는 11.862년(약 11년 10개월) 정도이다. <br>
+             
+             <br><br>작은 암석과 먼지로 이루어진 토성보다 얇고 희민한 고리가 있다.<br><br>
+
+
+            </p></span>
+        </aside>
+            <div id="main_contents">
+               <h1 class="shimmer"> <article class="card card--jupiter">
+                    <div class="card__planet">
+                      <div class="planet__atmosphere">
+                        <div class="planet__surface"></div>
+                      </div>
+                    </div><br>
+                    <div class="card__info">
+                        <div class="info__item">
+                          <label class="info__label">Tilt</label><span class="info__line"></span><i class=" tilt__icon fas fa-long-arrow-alt-right"></i><span class="info__detail">25.2° </span>
+                        </div>
+                        <div class="info__item">
+                          <label class="info__label">Day</label><span class="info__line"></span><span class="info__detail">24.6 hours</span>
+                        </div>
+                        <div class="info__item">
+                          <label class="info__label">Year</label><span class="info__line"></span><span class="info__detail">687 days</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </ul>
+                </div>
+        </section>
+    </div>
+   <br><br>
+   <footer>
+  <link rel="stylesheet" href="b.css" >
+  <article id="wrap">
+    <article id="lightings">
+        <section id="one">
+              <section id="two">
+                  <section id="three">
+                      <section id="four">
+                          <section id="five">
+                          </section>
+                      </section>
+                  </section>
+              </section>
+      </section>
+      </article>
+      <div id="address">Pale Blue Dot.</div>
+        <ul><p><br><br>
+          <li>Pale blue dot.</li>
+          <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+          <li>based in The Earth copyright © 2022</li>
+        </ul>
+      </footer>
+  </article>
+  </body>
+</html>

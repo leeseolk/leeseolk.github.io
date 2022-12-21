@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+         @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+#a1{ text-decoration: none; color: rgba(59, 67, 80, 0.382); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+    #a2{text-decoration: none; color: rgb(146, 146, 146);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a3{  text-decoration: none;color: rgba(255, 208, 0, 0.8);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a2:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+  color:rgba(255, 208, 0, 0.8);
+}
+            body{
+     -ms-overflow-style: none;
+     }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /*특정 부분 스크롤바 없애기*/
+  
+        body{
+            background-color: #000000;
+        }
+:root{    --mars-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/mars.jpg);
+  --mars-tilt: rotate(25.2deg);
+  --mars-day: 24.6;
+  --mars-color: #c07158;
+ }
+      @keyframes planetRotate {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+*{
+            padding: 0;
+            margin: 0;
+        }
+      html,
+      body {
+  color: #fff;
+        height: 100%;
+        padding: 0, auto;
+        margin: 0, auto;
+        align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+        
+      }
+
+      header {
+        width:1400px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 40px;
+        background-color: #000000;
+      }
+      .clear{
+            clear: both;
+        }
+      #contents{
+      width: 90%;
+        min-height: calc(100% - 120px);
+            margin: 0 auto;
+        }
+        #sub_menu{
+            width: 100px;
+            float: left;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+     aside{
+      width: 35%;
+      float:right;
+      margin-top:60px;
+      margin-right:20px;
+      background-color: rgba(14, 14, 38, 0.347);
+  
+     }
+   h4{
+      font-size:50px;
+      float: left;
+      color: #ce8f84;;
+     }
+       .slide:hover,.slide1:hover,.slide2:hover, .slide3:hover, .slide4:hover, .slide5:hover,.slide6:hover,.slide7:hover,.slide8:hover
+      .slide:hover,.slide1:focus,.slide2:focus,.slide3:focus,.slide4:focus,.slide5:focus,.slide6:focus,.slide7:focus,.slide8:focus
+      {box-shadow: inset 6.5em 0 0 0 var(--hover);}
+.slide1 {
+  --color: #ffffff;
+  --hover: #103dba;
+}
+.slide2 {
+    --color: #ffffff;
+  --hover: #898989;
+}
+.slide3 {
+  --color: #ffffff;
+  --hover: #e79d2e;
+}
+.slide4 {
+  --color: #c63c23;
+
+}
+.slide5 {
+  --color: #ffffff;
+  --hover: #f0be89;
+}
+.slide6{
+  --color: #ffffff;
+  --hover: #c2a780;
+}
+.slide7{
+  --color: #ffffff;
+  --hover: #81dce6;
+}
+.slide {
+  --color: #ffffff;
+  --hover: #5371c4;
+}
+button {
+  background: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  padding: 1em 2em;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+        #main_contents{
+            width: 1300px;
+            float: center;
+            margin-top: 15px;
+        }
+
+      footer {
+        height: 100px;
+        background-color: #000000;
+      }
+      li{
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #7e7e7e;
+        font-size: 7px;
+    }
+    #address{
+            float: right;
+            margin: 50px 90px 0 0;
+            color: white;
+            /*border: solid 1px red;*/
+        }
+      .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card--mars .planet__atmosphere {
+  box-shadow: inset 10px 0px 12px -2px rgba(255, 255, 255, 0.2), inset -70px 0px 50px 0px black, -5px 0px 10px -4px var(--mars-color);
+}
+.card--mars .planet__surface {
+  background-image: var(--mars-image);
+  transform: var(--mars-tilt) scale(1.2);
+  animation: planetRotate calc(var(--mars-day)*.1s) linear infinite;
+}
+.card--mars .card__planet::before {
+  transform: var(--mars-tilt) scale(1.2);
+  border-color: var(--mars-color);
+  color: var(--mars-color);
+}
+.card--mars .tilt__icon {
+  transform: var(--mars-tilt);
+  color: var(--mars-color);
+}
+.card__planet::before {
+  content: "";
+  position: relative;
+  height: 190px;
+  z-index: -2;
+  left: 50%;
+  top: 0%;
+ 
+}
+
+.planet__atmosphere {
+  height: 390px;
+  width: 390px;
+  position: relative;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 65%);
+  border-radius: 200px;
+  overflow: hidden;
+  margin-top: 100px;
+
+
+}
+.planet__surface {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+
+.card__info {
+  width: 50%;
+  color:#ffffff;
+  font-family: "Noto-sans", sans-serif;
+  font-weight: 100px;
+}
+
+.info__item {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  font-size: 14px;
+ 
+}
+.info__item .tilt__icon {
+  margin: 0 auto;
+}
+.info__label {
+  font-size: 11px;
+}
+.info__line {
+    width:1400px;
+  flex: 1;
+  margin: 0 auto;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header> 
+      <div id="logo"></div><link rel="stylesheet" href="a1.css" ><h1 class="shimmer"> </div>
+      <a id= a1 href='index.html'>Pale Blue Dot.</h1></a>
+      <span style="float:right;">
+      <a id= a2 href='calsagan.html'>Carl Sagan</a>&emsp;
+      <a id= a3 href='planet.html'>Planet</a>&emsp;
+      <a id= a2 href='tra.html'>Trappist</a>&emsp;
+      <a id= a2 href='james.html'>James Webb</a>&emsp;
+      <a id= a2 href='as.html'>Astronomy</a>&emsp;</span>
+      </header>
+      
+    <div id="wrap">
+      <div id="content-wrap">
+        <section id="contents">
+          <nav id="sub_menu"> 
+            <a href="planet.html"><button class="slide1">Earth</button></a>
+            <a href="mercury.html"><button class="slide2">Mercury</button></a>
+              <a href="venus.html"><button class="slide3">Venus</button></a>
+             <button class="slide4">Mars</button>
+             <a href="jupiter.html"><button class="slide5">Jupiter</button></a>
+             <a href="saturn.html"> <button class="slide6">Saturn</button></a>
+             <a href="uranus.html"><button class="slide7">Uranus</button></a>
+             <a href="neptune.html"><button class="slide">Neptune</button></a>
+        </nav>
+        <aside><h4>Mars : <br> ___
+          <span><p>Mars has two moons, but it does not have any oceans.</p>
+            <br><p>태양에서 네번째로 가까운 행성. 산화철로 인한 붉은 빛이 감도는 사막 지형을 가지고 있다.<br>
+              자전주기는 약 24시간 37분으로, 24시간인 지구와 비슷하며, 공전주기는 약 687일[9]로, 지구보다 약 1.88배 길다.
+              <br>화성의 대기는 아주 희박하다. 지표부근의 대기압은 약 0.006기압으로 지구의 약 0.75%에 불과하다.
+              <br> 이렇게 희박한 대기는 중력이 작기 때문이다.
+            <br>대기의 구성은 이산화탄소가 약 95%, 질소가 약 3%, 아르곤이 약 1.6%이고, 다른 미량의 산소와 수증기 등을 포함한다.
+            <br>화성의 표면온도는 약 -140°C~20°C 정도로 평균온도는 약 -80°C이다.
+            <br> 이렇게 낮은 온도는 화성의 대기가 희박하기 때문에 열을 유지할 수 없기 때문이라 알려져 있다. 
+            <br><br>화성의 운동_자전<br>
+            화성의 자전주기는 약 24시간 37분으로 지구와 거의 비슷하다. 자전축 또한 약 25° 기울어진 것이 지구와 비슷하다.
+            <br>따라서 지구와 같이 계절의 변화가 생길 것이다. 하지만 화성의 운동이 장기간 동안 안정한지를 조사하기 위하여 
+            <br>수행된 시뮬레이션의 결과로 자전축이 크게 변하는 현상을 겪고 있다는 것을 알았다 <br>
+            화성의 자전축은 수백 만 년에 걸쳐 불규칙하게 변동하고 있고, 
+            <br>이 변동은 태양과 다른 행성들과의 중력 상호작용에 의한 것으로 추정된다.<br>
+            화성의 공전궤도는 약간 찌그러진 타원의 형태를 하고 있다.
+            
+            <br><br>화성에는 두 개의 위성, 포보스(Phobos)와 데이모스(Deimos)가 있다.<br>
+            이 두 위성은 1877년 미국의 천문학자 홀(Asaph hall)에 의해서 발견되었다. <br>
+            타원체로 직경이 약 27km이며, 화성으로부터 약 9,380km의 거리에서 7시간 30분정도의 공전 주기로 돌고 있다.  <br>
+            포보스는 화성의 자전속도 보다 빠르게 공전하기 때문에 화성지표면에서 보면 서쪽에서 떠서 동쪽으로 질 것이다. <br>
+           <br><br>
+
+
+            </p></span>
+        </aside>
+            <div id="main_contents">
+               <h1 class="shimmer"> <article class="card card--mars">
+                    <div class="card__planet">
+                      <div class="planet__atmosphere">
+                        <div class="planet__surface"></div>
+                      </div>
+                    </div><br>
+                    <div class="card__info">
+                        <div class="info__item">
+                          <label class="info__label">Tilt</label><span class="info__line"></span><i class=" tilt__icon fas fa-long-arrow-alt-right"></i><span class="info__detail">25.2° </span>
+                        </div>
+                        <div class="info__item">
+                          <label class="info__label">Day</label><span class="info__line"></span><span class="info__detail">24.6 hours</span>
+                        </div>
+                        <div class="info__item">
+                          <label class="info__label">Year</label><span class="info__line"></span><span class="info__detail">687 days</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </ul>
+                </div>
+        </section>
+    </div>
+   <br><br>
+   <footer>
+  <link rel="stylesheet" href="b.css" >
+  <article id="wrap">
+    <article id="lightings">
+        <section id="one">
+              <section id="two">
+                  <section id="three">
+                      <section id="four">
+                          <section id="five">
+                          </section>
+                      </section>
+                  </section>
+              </section>
+      </section>
+      </article>
+      <div id="address">Pale Blue Dot.</div>
+        <ul><p><br><br>
+          <li>Pale blue dot.</li>
+          <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+          <li>based in The Earth copyright © 2022</li>
+        </ul>
+      </footer>
+  </article>
+  </body>
+</html>

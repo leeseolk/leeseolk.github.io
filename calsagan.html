@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap'); </style>
+      <style>
+           @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+           @font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+           #a1{ text-decoration: none; color: rgba(59, 67, 80, 0.382); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; 
+}
+#a2:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+  color:rgba(255, 208, 0, 0.8);
+}
+    #a2{text-decoration: none; color: rgb(146, 146, 146);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+
+    }
+    #a3{  text-decoration: none;color: rgba(255, 208, 0, 0.8);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+    #a4{text-decoration: none;color: #9aaddc;
+      font-family:'Roboto Slab', serif;
+      font-size: 20px;
+      font-weight: 100px;
+      padding: 20px;
+
+    }
+            body{
+     -ms-overflow-style: none;
+     }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /*특정 부분 스크롤바 없애기*/
+  
+        body{
+            background-color: #000000;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      html,
+      body {
+  color: #fff;
+        height: 100%;
+        padding: 0, auto;
+        margin: 0, auto;
+        align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+        
+      }
+
+      header {
+        width:1400px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 40px;
+        background-color: #000000;
+      }
+      .clear{
+            clear: both;
+        }
+      #contents{
+      width: 100%;
+        min-height: calc(100% - 120px);
+            margin: 0 auto;
+        }
+        #main_menu{
+            width: 1400px;
+            height: 100px;
+            margin-top: 20px;
+      
+            text-align:center;
+        }
+        #sub_menu{
+          height:100%;
+            width: 35%;
+            float: left;
+            margin-top:20px;
+            margin-left:20px;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+     aside{
+      height:100%;
+      width: 35%;
+      float:right;
+      margin-top:20px;
+      margin-right:20px;
+      font-family: 'Roboto Slab', serif;
+  
+     }
+   h4{
+      font-size:50px;
+      float: left;
+     }
+     #main_contents{
+            width: 1300px;
+            float: center;
+            margin-top: 15px;
+           
+        }
+table{
+ margin: auto;
+            float: center;
+}
+      footer {
+        height: 100px;
+        background-color: #000000;
+      }
+      li{
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #7e7e7e;
+        font-size: 7px;
+    }
+    #address{
+            float: right;
+            margin: 50px 90px 0 0;
+            color: white;
+            /*border: solid 1px red;*/
+        }
+        #wrap {
+        min-height: calc(100% - 120px);
+      }
+      #book{
+        text-align: center;
+        line-height: 150%;
+        color:rgb(185, 194, 204)
+        
+      }
+      .contact-fp-wrap {
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+}
+
+.booton {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 1px;
+  stroke: url("#logo-gradient");
+}
+
+.booton-text {
+  font-family:'Roboto Slab', serif;
+  font-size: 22px;
+  position: relative;
+  top: -48px;
+  left:8px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 5px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.contact-fp-wrap:hover .booton {
+  cursor: pointer;
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+h1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center
+  
+}
+#ul1{
+  text-align: center
+}
+h5{
+  font-weight: 200;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center
+  
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card{
+  margin:10px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 350px;
+  transition: 0.5s;
+}
+.content{
+  position:absolute;
+  width:inherit;
+  height: inherit;
+  top: 100%;
+  left:0;
+
+  box-sizing: border-box;
+  color: #000000;
+
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.card:nth-child(1) .content{
+  background: linear-gradient(to top,#9aaddc, transparent);
+}
+.card:nth-child(2) .content{
+  background: linear-gradient(to top, crimson, transparent);
+}
+.card:nth-child(3) .content{
+  background: linear-gradient(to top, crimson, transparent);
+}
+.content h4{
+  font-size: 14px;
+  font-family:'Chosunilbo_myungjo';
+  font-weight: 300;
+}
+.content h4 span{
+  display: block;
+  font-size: 14px;
+  color:rgb(255, 255, 255);
+  margin-top: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  float: center;
+}
+
+.card:hover .content{
+  top: 0;
+}
+.card :hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.21);
+}
+p{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h2{
+  font-family:'Roboto Slab', serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 200;
+}
+        </style>
+</head>
+<body>
+  <header>  
+      <div id="logo"></div><link rel="stylesheet" href="a1.css" ><h1 class="shimmer"> </div>
+      <a id= a1 href='index.html'>Pale Blue Dot.</h1></a>
+      <span style="float:right;">
+      <a id= a3 href='calsagan.html'>Carl Sagan</a>&emsp;
+      <a id= a2 href='planet.html'>Planet</a>&emsp;
+      <a id= a2 href='tra.html'>Trappist</a>&emsp;
+      <a id= a2 href='james.html'>James Webb</a>&emsp;
+      <a id= a2 href='as.html'>Astronomy</a>&emsp;</span>
+   </header>
+      <section id="main_menu">
+        <div class="contact-fp-wrap">
+          <svg height="50" width="180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="75%" y2="100%">
+        
+                <stop offset="0%" stop-color="#F79533">
+                  <animate attributeName="stop-color" values="#F79533; #F37055; #EF4E7B; #A166AB; #5073B8; #1098AD; #07B39B; #6DBA82; #F79533" dur="4s" repeatCount="indefinite"></animate>
+                </stop>
+        
+                <stop offset="100%" stop-color="#F79533">
+                  <animate attributeName="stop-color" values="#F37055; #EF4E7B; #A166AB; #5073B8; #1098AD; #07B39B; #6DBA82; #F79533; #F37055" dur="4s" repeatCount="indefinite"></animate>
+                </stop>
+        
+              </linearGradient>
+            </defs>
+            <rect class="booton" height="50" width="180" />
+          </svg><div id="up"> </div>
+          <div class="booton-text"><a id=a4 href="#book">Book</a><a id=a4 href="#about">Passage</a>
+          <a id=a4 href="#up"></a> </div>
+        </div>
+        
+      </section>
+      <div id="wrap">
+        <nav id="sub_menu">
+  <h1>Cal</h1><br>
+  <center><img src="img/pale.png"width='300' height= '250'></center>
+  <div id="ul1"><br>
+    <li>Pale blue dot(창백한 푸른점)</li><br>
+    <li>1990.2.14일 칼세이건의 주도하에 촬영되었다.</li>
+    <li>보이저 1호가 찍은 지구의 사진을 부르는 명칭이다.</li><br>
+    <li>"지구의 광활한 우주에 떠 있는 보잘것없는 존재에 </li>
+    <li>불과함을 사람들에게 가르쳐 주고 싶었다"</li>
+    
+  </ul>
+        </nav>
+        <aside><h1>Sagan</h1>
+          <br><br><br>
+         <div id="ul1">
+          <li>
+            <img src="img/sign.png"width='300' height= '60'>
+          </li><br>
+          <li>Carl Edward Sagan</li><br>
+          <li>1934.11.9 - 1996.12.10</li><br><br>
+          <li>▽</li><br><br>
+          <li>Cosmos</li>
+          <li>Pale Blue Dot</li>
+          <li>The Dragons of Eden</li>
+          <li>Contact</li>
+          <li>Comet</li>
+          <li>The Demon-Haunted World</li>
+          <li>Billions & Billions</li>
+          <li>Shadows of Forgotten Ancestors</li>
+          <li>The Varieties of Scientific Experience</li>
+          <li>Murmurs of Earth</li>
+          <li>Broca's Brain</li>
+          <li>Conversations with Carl Sagan</li>
+         </ul></aside>
+      <div id="main_contents">
+          
+           
+     <img src="img/calsagan2.png"width='420' height= '554' >
+                    
+      </div></div>
+      <div id="book"> 
+
+        <table>
+        <tr>
+        <div class="container">
+          <td>
+          <div class="card">
+            <img src="img/book.jpg" width="230" height="304">
+            <div class="content">
+          <h4><span>마음에 들지 않는 생각을 억압하는 일은 <br>
+          종교나 정치에서는 흔히 있을 수 있을지 <br>
+          모르겠지만 진리를 추구하는 이들이<br>
+         취할태도는 전혀 아니다.</span></h4>
+              
+            </div>
+          </div>
+        </div></td>
+        <td>
+        <div class="card">
+          <img src="img/book1.jpg"width="215" height="304">
+          <div class="content">
+            <h4><span>인간을 독특하게 만드는 건 <br>
+              인간의 생각이고,<br>
+             과학은 그것의 가장 훌륭한 예시입니다.</span></h4>
+           
+          </div>
+        </div></td>
+        <td>
+          <div class="card">
+            <img src="img/book3.jpg"width="215" height="304">
+            <div class="content">
+              <h4><span>신기한 것에 대한 매혹은 <br>
+               우리의 비판적 능력을 무디게 한다.
+              <br>과학이 인류에게 선사한 고귀한 선물,
+              <br>그것은 바로 생명이다.</span></h4>
+            </div>
+          </div></td>
+          <td>
+            <div class="card">
+              <img src="img/book4.jpg"width="225" height="304">
+              <div class="content">
+                <h4><span>개인 한 사람은 독특하고 귀한 존재이며, <br>
+                  그로부터 우리는 인간의 존엄성이라는
+                 <br>윤리적 결론을 자연스럽게<br>
+                이끌어 낼 수 있다.</span></h4>
+              </div>
+            </div></td>
+            <td>
+              <div class="card">
+                <img src="img/book5.jpg"width="215" height="304">
+                <div class="content">
+                  <h4><span>레코드판은 또 이렇게 말한다. <br>
+                    당신이 누구이고 무엇이든, 우리도 한때
+                   <br>별들의 거주지인 이 우주에서 살았고,<br>
+                  그리고 당신을 생각했답니다.</span></h4>
+                </div>
+              </div></td>
+      </tr>
+    <tr>
+      <td>
+        <div class="card">
+          <img src="img/book6.jpg"width="225" height="304">
+          <div class="content">
+            <h4><span>저는 미신이야말로 간단한 것이라는 <br>
+              가설을 제안하고 싶습니다.
+             <br>미신은 한마디로 증거 없는 믿음입니다.<br>
+            그럼 '증거'란 무엇일까요?</span></h4>
+          </div>
+        </div></td>
+        <td>
+          <div class="card">
+            <img src="img/book7.jpg"width="225" height="304">
+            <div class="content">
+              <h4><span>혜성은 태양계와 생명과 <br>
+                우리 인간의 기원을 설명해주는 
+               <br>중요한 열쇠이다.혜성은 우리의 <br>
+              유한한 운명(mortality)을 상기시킨다.
+             </span></h4>
+            </div>
+          </div></td>
+          <td>
+            <div class="card">
+              <img src="img/book2.jpg"width="230" height="304">
+              <div class="content">
+                <h4><span>이런 멀리 떨어진 곳에서 일어난 사건에 <br>
+                  다치는 일없이 보이저는 사라져 버린
+                 <br>세계의 기억들을 지닌 채<br>
+                그저 계속 날아갈 것이다.
+               </span></h4>
+              </div>
+            </div></td>
+            <td>
+              <div class="card">
+                <img src="img/book8.jpg"width="215" height="304">
+                <div class="content">
+                  <h4><span>난 알려지지 않은 부분을 많이 내포하고<br>
+                    있으면서, 동시에 이해할 수 있는
+                   <br>부분이 아주 많은 우주를 좋아한다. <br>
+                
+                 </span></h4>
+                </div>
+              </div></td>
+              <td>
+                <div class="card">
+                  <img src="img/book9.jpg"width="215" height="304">
+                  <div class="content">
+                    <h4><span>아주 어릴 때부터 뭔가를 찾고 있었어요.<br>
+                       왜 우리가 여기 있는지
+                     <br>여기서 무얼 하고 있고.<br>
+                     우리는 누구인지...
+                  
+                   </span></h4>
+                  </div>
+                </div></td>
+    </tr></table><br><br><br>
+    <div id="about">
+        <img src="img/blue1.png"width='1500' height= '101'> <br>
+        <br><h2>Pale blue dot.</h2>
+       <br><details>
+          <summary>
+       <h5>Look again at that dot.</h5>
+       <h5>저 점을 다시 보십시오.</h5></summary>
+       <h5>That's here. That's home. That's us.</h5>
+       <h5>저 점이 우리가 있는 이곳입니다. 저 곳이 우리의 집이자, 우리 자신입니다.</h5>
+       <h5>On it everyone you love, everyone you know,</h5>
+       <h5>우리가 사랑하는 모든 이들, 우리가 알고있는 모든 사람,</h5>
+       <h5>everyone you ever heard of, every human being who ever was, lived out their lives.</h5>
+       <h5>당신이 들어 봤을 모든 사람, 예전에 있었던 모든 사람이 바로 저 작은 점 위에서 일생을 살았습니다.</h5>
+       <h5>The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines,</h5>
+       <h5>우리의 모든 즐거움과 고통, 확신에 찬 수많은 종교, 이데올로기들, 경제 체제,</h5>
+       <h5>every hunter and forager, every hero and coward, every creator and destroyer of civilization,</h5>
+       <h5>모든 사냥꾼과 약탈자, 모든 영웅과 비겁자, 문명의 창조자와 파괴자,</h5>
+       <h5>every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer,</h5>
+       <h5>왕과 농부, 사랑에 빠진 젊은 연인들, 모든 아버지와 어머니, 희망에 찬 아이들, 발명가와 탐험가,</h5>
+       <h5>every teacher of morals, every corrupt politician, every "superstar," every "supreme leader,"</h5>
+       <h5>모든 도덕교사, 모든 타락한 정치인, 모든 슈퍼스타, 모든 최고 지도자,</h5>
+       <h5>every saint and sinner in the history of our species lived there-on a mote of dust suspended in a sunbeam.</h5>
+       <h5>인간 역사속의 모든 성인과 죄인이 모두 바로 태양빛에 걸려있는 저 먼지 같은 작은 점 위에서 살았습니다.</h5>
+       <h5>The Earth is a very small stage in a vast cosmic arena.</h5>
+       <h5>우주라는 광대한 스타디움에서 지구는 아주 작은 무대에 불과합니다.</h5>
+       <h5>Think of the rivers of blood spilled by all those generals and emperors so that,</h5>
+       <h5>인류역사 속의 무수한 장군과 황제들이 저 작은 점의 극히 일부를,</h5>
+       <h5>in glory and triumph, they could become the momentary masters of a fraction of a dot.</h5>
+       <h5>그것도 아주 잠깐 동안 차지하는 영광과 승리를 누리기 위해 죽였던 사람들이 흘린 피의 강물을 한 번 생각해보십시오.</h5>
+       <h5>Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner,</h5>  
+       <h5>저 작은 픽셀의 한 쪽 구석에서 온 사람들이 같은 픽셀의 다른 쪽에 있는, 겉모습이 거의 분간도 안되는 사람들에게 저지른 셀 수 없는 만행을 생각해보십시오.</h5>  
+       <h5>how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.</h5>
+       <h5>서로를 얼마나 자주 오해했는지, 서로를 죽이려고 얼마나 애를 썼는지, 그리고 그런 그들의 증오가 얼마나 깊었는지 생각해보십시오.</h5>   
+       <h5>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</h5>
+       <h5>위대한 척하는 우리의 몸짓, 스스로 중요한 존재라고 생각하는 우리의 믿음, 우리가 우주에서 특별한 위치를 차지하고 있다는 망상은 저 희미한 파란 불빛 하나만 봐도 그 근거를 잃습니다.</h5>
+       <h5>Our planet is a lonely speck in the great enveloping cosmic dark.</h5>
+       <h5>우리가 사는 이곳은 암흑 속 외로운 얼룩일 뿐입니다.</h5>
+       <h5>In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</h5>
+       <h5>이 광활한 어둠 속의 다른 어딘가에 우리를 구해줄 무언가가 과연 있을까.</h5>
+       <h5>The Earth is the only world known so far to harbor life.</h5>
+       <h5>현재까지 알려진 바로는 지구는 생명을 간직할 수 있는 유일한 장소입니다.</h5>
+       <h5>There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet.</h5>
+       <h5>적어도 가까운 미래에 우리 인류가 이주를 할 수 있는 행성은 없습니다. 잠깐 방문을 할 수 있는 행성은 있겠지만, 정착할 수 있는 곳은 아직 없습니다.</h5>
+       <h5>Like it or not, for the moment the Earth is where we make our stand.</h5>
+       <h5>좋든 싫든 인류는 당분간 지구에서 버텨야 합니다.</h5>
+       <h5>It has been said that astronomy is a humbling and character-building experience.</h5>
+       <h5>천문학을 공부하면 겸손해지고, 인격이 형성된다고 합니다.</h5>
+       <h5>here is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.</h5>
+       <h5>우리의 작은 세계를 찍은 이사진보다, 우리의 오만함을 쉽게 보여주는 것이 존재할까.</h5>
+       <h5>To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.</h5>
+       <h5>제게 이 사진은 우리가 서로를 더 배려해야 하고, 우리가 아는 유일한 삶의 터전인 저 희미한 푸른 점을 아끼고 보존해야 한다는 책임감에 대한 강조입니다.</h5>
+       <br><br><br><div class="booton-text">
+        <a id=a4 href="#up">↑</a> </div>
+       </details>
+      </div></div>
+    <br><br>
+      <footer>
+        <link rel="stylesheet" href="b.css" >
+        <article id="wrap">
+          <article id="lightings">
+              <section id="one">
+                    <section id="two">
+                        <section id="three">
+                            <section id="four">
+                                <section id="five">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+            </section>
+            </article>
+            <div id="address">Pale Blue Dot.</div>
+              <ul><p><br><br>
+                <li>Pale blue dot.</li>
+                <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+                <li>based in The Earth copyright © 2022</li>
+              </ul>
+            </footer>
+        </article>
+</body>
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+  <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Homemade+Apple&family=Kenia&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+           @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+           #a1{ text-decoration: none; color: rgba(59, 67, 80, 0.382); }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+    #a2{text-decoration: none; color: rgb(146, 146, 146);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+
+    }
+    #a2:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+  color:rgba(255, 208, 0, 0.8);
+}
+    #a3{  text-decoration: none;color: rgba(255, 208, 0, 0.8);
+      font-family:'Roboto Slab', serif;
+      font-weight: 100px;
+    }
+            body{
+     -ms-overflow-style: none;
+     }
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /*특정 부분 스크롤바 없애기*/
+  
+        body{
+            background-color: #000000;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      html,
+      body {
+        height: 100%;
+        padding: 0, auto;
+        margin: 0, auto;
+        align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+        
+      }
+      #main_text{
+            width: 100%;
+            height: 100px;
+            background-position: top center;
+            margin-top: 20px;
+           color: #ffffff;
+           text-align: center;
+        }
+      header {
+        width:1400px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 40px;
+        background-color: #000000;
+      }
+      .clear{
+            clear: both;
+        }
+      #contents{
+      width: 1200px;
+        height: 1500px;
+            margin: 0 auto;
+        }
+        #main_menu{
+            width: 1400px;
+            height: 100px;
+            margin-top: 20px;
+      
+            text-align: right;
+        }
+
+     #main_contents{
+            width: 1300px;
+            float: center;
+            margin-top: 15px;
+           
+        }
+
+      footer {
+        height: 100px;
+        background-color: #000000;
+      }
+      li{
+        list-style-type: none;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: #7e7e7e;
+        font-size: 7px;
+    }
+    #address{
+            float: right;
+            margin: 50px 90px 0 0;
+            color: white;
+            /*border: solid 1px red;*/
+        }
+        #wrap {
+        min-height: calc(100% - 120px);
+      }
+
+      table{
+        
+  margin: 0, auto;
+  text-align: center;}
+
+.education {
+  --bg-color: #000000;
+  --bg-color-light:#9aaddc;
+  --text-color-hover: #b3d4ff;
+  --box-shadow-color: rgba(159, 201, 233, 0.48);
+}
+
+
+.card {
+  width: 240px;
+  height: 321px;
+  background: rgb(0, 0, 0);
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.card p {
+  float: center;
+  font-size: 11px;
+  color: #000000;
+  margin-top: 30px;
+  margin-left: 15px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: rgb(0, 8, 20);
+  border: 0.8px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.overlay {
+  width: 115px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #9aaddc;
+}
+h6{
+
+  color:#626d8a;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+  </style>
+</head>
+<body>
+  <header> 
+    <div id="logo"></div><link rel="stylesheet" href="a1.css" ><h1 class="shimmer"> </div>
+    <a id= a1 href='index.html'>Pale Blue Dot.</h1></a>
+    <span style="float:right;">
+    <a id= a2 href='calsagan.html'>Carl Sagan</a>&emsp;
+    <a id= a2 href='planet.html'>Planet</a>&emsp;
+    <a id= a2 href='tra.html'>Trappist</a>&emsp;
+    <a id= a2 href='james.html'>James Webb</a>&emsp;
+    <a id= a3 href='as.html'>Astronomy</a>&emsp;</span>
+    </header>
+    <br>
+   <section id="main_text">
+    <h2>Mystical knowledge of astronomy </h2><br>
+    <h6>지구의 필수 원소는 탄소 입니다. 이 원소는 항성이 폭발할때만 생성이 되는데
+     즉 생명엔 모두 별조각이 있습니다. 우리는 별의 자녀라는 사실을 잊고 지냅니다.
+      결국 별을 배운다는 건 우주적인 의미로 나 자신에 대한 공부가 되는 걸지도 모릅니다.
+    </h6><br>
+   </section>
+   <br> <br>
+
+    <div id="wrap">
+      <div id="contents">
+        <table><tr>
+         <td>
+<a href="#" class="card education">
+  <div class="overlay"></div>
+  <div class="circle">
+      <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+        <g id="Group-8" fill="#D98A19">
+          <g id="Group-7">
+            <g id="Group-6">
+              <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+            </g>
+          </g>
+        </g>
+        <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+          <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+          <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+          <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+          <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+          <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+          <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+          <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+          <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+          <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+          <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+          <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+          <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+          <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+        </g>
+  </div>
+  <p> 1946년 우주에서 지구의  모습이
+    촬영 되었다. <br>이 시점 이전까지
+    인간은 자신들이 사는 행성이 <br>
+    어떻게 생겼는지도 몰랐다.
+    </p>
+</a></td>
+<td>
+  <a href="#" class="card education">
+    <div class="overlay"></div>
+    <div class="circle">
+        <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+          <g id="Group-8" fill="#D98A19">
+            <g id="Group-7">
+              <g id="Group-6">
+                <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+              </g>
+            </g>
+          </g>
+          <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+            <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+            <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+            <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+            <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+            <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+            <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+            <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+            <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+            <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+            <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+            <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+            <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+            <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+          </g>
+    </div>
+    <p> 별이 반짝거리는 이유는<br>
+      지구의 대기가 움직여서
+      지구 대기를 통과해 <br> 들어오는
+      별빛이 흔들리기 때문이다.
+      </p>
+  </a></td>
+  <td>
+    <a href="#" class="card education">
+      <div class="overlay"></div>
+      <div class="circle">
+          <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+            <g id="Group-8" fill="#D98A19">
+              <g id="Group-7">
+                <g id="Group-6">
+                  <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                </g>
+              </g>
+            </g>
+            <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+              <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+              <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+              <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+              <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+              <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+              <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+              <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+              <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+              <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+              <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+              <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+              <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+              <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+            </g>
+      </div>
+      <p>중력이 세지면 시간이 느려진다.<br>
+      블랙홀 주변은 중력이 너무 세 시간이 멈추는데,<br>
+    이를 사건의 지평선이라 부른다.</p>
+    </a></td>
+    <td>
+      <a href="#" class="card education">
+        <div class="overlay"></div>
+        <div class="circle">
+            <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+              <g id="Group-8" fill="#D98A19">
+                <g id="Group-7">
+                  <g id="Group-6">
+                    <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                  </g>
+                </g>
+              </g>
+              <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+              </g>
+        </div>
+        <p>천제의 질량이 클수록 블랙홀 크기도 <br>
+          비례해 커진다. 즉 크기가 큰 별이 죽을 수록<br>
+      블랙홀의 크기도 커진다는 뜻이 된다.</p>
+      </a></td>
+      <td>
+        <a href="#" class="card education">
+          <div class="overlay"></div>
+          <div class="circle">
+              <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                <g id="Group-8" fill="#D98A19">
+                  <g id="Group-7">
+                    <g id="Group-6">
+                      <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                  <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                  <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                  <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                  <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                  <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                  <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                  <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                  <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                  <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                  <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                  <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                  <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                  <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                </g>
+          </div>
+          <p>태양계 밖에서 방문해온 오우무아무아가<br>
+          명왕성을 지나 다시 태양계를 벗어났다.<br>
+          인류 역사에 있어 첫 태양계 바깥 손님이<br>
+        더 넓은 우주를 여행하러 떠났다.</p>
+        </a></td>
+
+</tr>
+<tr><td>
+  <a href="#" class="card education">
+    <div class="overlay"></div>
+    <div class="circle">
+        <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+          <g id="Group-8" fill="#D98A19">
+            <g id="Group-7">
+              <g id="Group-6">
+                <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+              </g>
+            </g>
+          </g>
+          <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+            <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+            <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+            <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+            <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+            <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+            <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+            <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+            <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+            <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+            <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+            <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+            <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+            <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+          </g>
+    </div>
+    <p>많은 경우 헬릭스 성운은 '신의 눈동자'라는<br>
+      이명으로 불립니다.<br>
+      경이롭고 아름다우면서 압도적인 느낌입니다.
+    
+    </p>
+  </a></td>
+  <td>
+    <a href="#" class="card education">
+      <div class="overlay"></div>
+      <div class="circle">
+          <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+            <g id="Group-8" fill="#D98A19">
+              <g id="Group-7">
+                <g id="Group-6">
+                  <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                </g>
+              </g>
+            </g>
+            <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+              <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+              <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+              <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+              <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+              <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+              <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+              <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+              <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+              <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+              <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+              <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+              <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+              <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+            </g>
+      </div>
+      <p>갈릴레오 갈릴레이는 413년전 오늘<br>
+      망원경을 이용해 하늘을 보기 시작했습니다.<br>
+    인류에게 새로운 눈이 생긴 것입니다.</p>
+    </a></td>
+    <td>
+      <a href="#" class="card education">
+        <div class="overlay"></div>
+        <div class="circle">
+            <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+              <g id="Group-8" fill="#D98A19">
+                <g id="Group-7">
+                  <g id="Group-6">
+                    <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                  </g>
+                </g>
+              </g>
+              <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+              </g>
+        </div>
+        <p>2022년 11월 15일 공식적으로<br>
+        지구의 인구는 80억명을 넘어섰습니다.</p>
+      </a></td>
+      <td>
+        <a href="#" class="card education">
+          <div class="overlay"></div>
+          <div class="circle">
+              <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                <g id="Group-8" fill="#D98A19">
+                  <g id="Group-7">
+                    <g id="Group-6">
+                      <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                  <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                  <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                  <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                  <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                  <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                  <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                  <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                  <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                  <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                  <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                  <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                  <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                  <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                </g>
+          </div>
+          <p>지구로 부터 100억광년 거리에 떨어진<br>
+          외계행성 TOI-1452b는 행성 전체가<br>
+        바다로 덮인 것으로 추정되고 있습니다.</p>
+        </a></td>
+        <td>
+          <a href="#" class="card education">
+            <div class="overlay"></div>
+            <div class="circle">
+                <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                  <g id="Group-8" fill="#D98A19">
+                    <g id="Group-7">
+                      <g id="Group-6">
+                        <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                    <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                    <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                    <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                    <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                    <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                    <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                    <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                    <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                    <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                    <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                    <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                    <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                    <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                  </g>
+            </div>
+            <p>영원할 것만 같은 태양계이지만<br>
+            태양계에도 종말은 찾아옵니다.<br>
+          태양은 이미 만ㄹ은 질량을 우주에 흩뿌리고<br>
+        힘을 잃은 상태입니다.</p>
+          </a></td>
+          
+  </tr></table></div></div>
+
+          <div id="wrap">
+            <div id="contents">
+              <table><tr>
+               <td>
+      <a href="#" class="card education">
+        <div class="overlay"></div>
+        <div class="circle">
+            <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+              <g id="Group-8" fill="#D98A19">
+                <g id="Group-7">
+                  <g id="Group-6">
+                    <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                  </g>
+                </g>
+              </g>
+              <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+              </g>
+        </div>
+        <p> 혜성이 남기고 간 먼지는 일정한 구역 내에<br>
+          많이 몰려 있기 때문에 유성이 동시다발적으로 <br>
+          떨어지는 현상이 발생하고,<br>
+          이것을 유성군이라고 부릅니다.          </p>
+      </a></td>
+      <td>
+        <a href="#" class="card education">
+          <div class="overlay"></div>
+          <div class="circle">
+              <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                <g id="Group-8" fill="#D98A19">
+                  <g id="Group-7">
+                    <g id="Group-6">
+                      <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                  <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                  <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                  <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                  <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                  <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                  <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                  <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                  <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                  <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                  <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                  <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                  <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                  <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                </g>
+          </div>
+          <p> 2012년 6월 6일 오전, 금성이 태양을<br>
+            가로지르는 '태양면 통과 현상'이 일어났습니다.
+            <br>다음으로 이 현상이 관측되는 것은
+            <br>2117년이라고 합니다.
+            </p>
+        </a></td>
+        <td>
+          <a href="#" class="card education">
+            <div class="overlay"></div>
+            <div class="circle">
+                <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                  <g id="Group-8" fill="#D98A19">
+                    <g id="Group-7">
+                      <g id="Group-6">
+                        <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                    <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                    <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                    <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                    <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                    <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                    <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                    <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                    <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                    <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                    <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                    <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                    <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                    <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                  </g>
+            </div>
+            <p>전체 88개의 별자리 중 한반도에서<br>
+            볼 수 있는 별자리는 약 50여개 입니다.<br>
+          </p>
+          </a></td>
+          <td>
+            <a href="#" class="card education">
+              <div class="overlay"></div>
+              <div class="circle">
+                  <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                    <g id="Group-8" fill="#D98A19">
+                      <g id="Group-7">
+                        <g id="Group-6">
+                          <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                      <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                      <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                      <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                      <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                      <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                      <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                      <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                      <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                      <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                      <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                      <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                      <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                      <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                    </g>
+              </div>
+              <p>별자리 중 가장 밝은 별을 알파별,<br>
+                그 다음 순서대로 베타, 감마 등 그리스 문자를 <br>
+            붙여나가는 방식은 17세기 영국의 요한 바이어가
+          <br>고안해낸 방법입니다.</p>
+            </a></td>
+            <td>
+              <a href="#" class="card education">
+                <div class="overlay"></div>
+                <div class="circle">
+                    <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                      <g id="Group-8" fill="#D98A19">
+                        <g id="Group-7">
+                          <g id="Group-6">
+                            <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                          </g>
+                        </g>
+                      </g>
+                      <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                        <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                        <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                        <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                        <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                        <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                        <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                        <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                        <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                        <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                        <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                        <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                        <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                        <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                      </g>
+                </div>
+                <p>고대 이집트인들은 화성을<br>
+                Har Decher(붉은 것), 또는<br>
+                죽음의 별이라고 불렀다고 합니다.<br>
+              </p>
+              </a></td>
+      
+      </tr>
+      <tr><td>
+        <a href="#" class="card education">
+          <div class="overlay"></div>
+          <div class="circle">
+              <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                <g id="Group-8" fill="#D98A19">
+                  <g id="Group-7">
+                    <g id="Group-6">
+                      <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                  <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                  <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                  <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                  <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                  <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                  <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                  <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                  <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                  <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                  <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                  <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                  <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                  <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                </g>
+          </div>
+          <p>우리가 별을 보는 것은 하늘이 아니라<br>
+            우주를 보고 있는 것 입니다.<br>
+            
+          
+          </p>
+        </a></td>
+        <td>
+          <a href="#" class="card education">
+            <div class="overlay"></div>
+            <div class="circle">
+                <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                  <g id="Group-8" fill="#D98A19">
+                    <g id="Group-7">
+                      <g id="Group-6">
+                        <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                      </g>
+                    </g>
+                  </g>
+                  <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                    <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                    <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                    <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                    <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                    <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                    <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                    <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                    <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                    <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                    <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                    <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                    <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                    <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                  </g>
+            </div>
+            <p>우리가 은하수라고 부르는 것은 <br>
+           우리 은하의 중심부 입니다.<br>
+            궁수자리 부근에서 가장 밝에 보입니다.</p>
+          </a></td>
+          <td>
+            <a href="#" class="card education">
+              <div class="overlay"></div>
+              <div class="circle">
+                  <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                    <g id="Group-8" fill="#D98A19">
+                      <g id="Group-7">
+                        <g id="Group-6">
+                          <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                      <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                      <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                      <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                      <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                      <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                      <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                      <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                      <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                      <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                      <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                      <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                      <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                      <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                    </g>
+              </div>
+              <p>별의 탄생이 있다면 종말 또한 존재합니다.<br>
+              이는 무거운 항성이 진화의 마지막 단계 이후
+            <br>남은 핵이 중력 붕괴를 거치며 만들어 집니다.
+         </p>
+            </a></td>
+            <td>
+              <a href="#" class="card education">
+                <div class="overlay"></div>
+                <div class="circle">
+                    <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                      <g id="Group-8" fill="#D98A19">
+                        <g id="Group-7">
+                          <g id="Group-6">
+                            <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                          </g>
+                        </g>
+                      </g>
+                      <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                        <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                        <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                        <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                        <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                        <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                        <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                        <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                        <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                        <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                        <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                        <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                        <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                        <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                      </g>
+                </div>
+                <p>궁수자리의 A*가 초대질량 블랙홀의<br>
+                유력한 후보입니다. 잠자는 거인으로 알려진<br>
+              이 블랙홀에서는 300년전에 
+              <br>대폭발이 있었다고 합니다.</p>
+              </a></td>
+              <td>
+                <a href="#" class="card education">
+                  <div class="overlay"></div>
+                  <div class="circle">
+                      <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">
+                        <g id="Group-8" fill="#D98A19">
+                          <g id="Group-7">
+                            <g id="Group-6">
+                              <path d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z" id="Fill-1"></path>
+                            </g>
+                          </g>
+                        </g>
+                        <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF" stroke-linecap="square">
+                          <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
+                          <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
+                          <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
+                          <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
+                          <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
+                          <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
+                          <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
+                          <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
+                          <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
+                          <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
+                          <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
+                          <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
+                          <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
+                        </g>
+                  </div>
+                  <p>영화 아바타2의 배경인 판도라는<br>
+                  태양의 이웃 항성인 알파 센타<br>
+                우리 성계에 속해 있다는 설정입니다.</p>
+                </a></td>
+                
+        </tr></table><br><br><br>
+       
+      </div></div></div></div></div>
+      <center>
+      <img src="img/gif.gif" width="1400;" height="700" ></center>
+
+<footer>
+
+  <link rel="stylesheet" href="b.css" >
+  <article id="wrap">
+    <article id="lightings">
+        <section id="one">
+              <section id="two">
+                  <section id="three">
+                      <section id="four">
+                          <section id="five">
+                          </section>
+                      </section>
+                  </section>
+              </section>
+      </section>
+      </article>
+      <div id="address">Pale Blue Dot.</div>
+        <ul><p><br><br>
+          <li>Pale blue dot.</li>
+          <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+          <li>based in The Earth copyright © 2022</li>
+        </ul>
+      </footer>
+  </article>
+
+</body>
+</html>
